@@ -6,7 +6,7 @@ services:
     volumes:
       - ./db:/db
     ports:
-      - 5000:5000
+      - 5001:5000
     networks:
       deploy_network:
     container_name: mlflow_mnist

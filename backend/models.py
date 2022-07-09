@@ -1,4 +1,3 @@
-
 from typing import Any, Optional, Union
 from pydantic import BaseModel
 
@@ -16,4 +15,4 @@ class PredictApiData(BaseModel):
 
 class DeleteApiData(BaseModel):
     model_name: str
-    model_version: Optional[Union[list[int], int]]  # list | int in python 10
+    model_version: Optional[Union[list[str], str]]  # list | int in python 10

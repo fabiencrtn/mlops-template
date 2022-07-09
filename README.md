@@ -23,7 +23,7 @@ mlflow ui --backend-store-uri sqlite:///db/bakckend.db
 ```
 
 ## Docker
-- Mlflow: http://localhost:5000
+- Mlflow: http://localhost:5001
 - FastApi: http://localhost:8000/docs
 - Streamlit: http://localhost:8501/
 

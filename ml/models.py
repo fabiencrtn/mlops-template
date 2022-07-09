@@ -1,5 +1,4 @@
 import torch
-import torchvision
 
 
 class LinearModel(torch.nn.Module):
@@ -7,10 +6,10 @@ class LinearModel(torch.nn.Module):
         super(LinearModel, self).__init__()
 
         # Get model config
-        self.input_dim = hyperparameters['input_dim']
-        self.output_dim = hyperparameters['output_dim']
-        self.hidden_dims = hyperparameters['hidden_dims']
-        self.negative_slope = hyperparameters.get("negative_slope", .2)
+        self.input_dim = hyperparameters["input_dim"]
+        self.output_dim = hyperparameters["output_dim"]
+        self.hidden_dims = hyperparameters["hidden_dims"]
+        self.negative_slope = hyperparameters.get("negative_slope", 0.2)
 
         # Create layer list
         self.layers = torch.nn.ModuleList([])
@@ -23,7 +22,6 @@ class LinearModel(torch.nn.Module):
     def forward(self, x):
         for i in range(self.num_layers - 1):
             x = self.layers[i](x)
-            x = torch.nn.functional.leaky_relu(
-                x, negative_slope=self.negative_slope)
+            x = torch.nn.functional.leaky_relu(x, negative_slope=self.negative_slope)
         x = self.layers[-1](x)
         return torch.nn.functional.softmax(x, dim=-1)

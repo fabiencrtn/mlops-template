@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mnist-mlops-learning"
+version = "0.1.0"
+description = ""
+authors = ["fabien <fabiencrouton10@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+urllib3 = "^1.26.9"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.961"
+black = {version = "^22.6.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
