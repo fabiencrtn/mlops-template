@@ -26,7 +26,7 @@ DELETE_URL = urljoin(BACKEND_URL, "delete")
 st.title("Mnist training and prediction")
 st.sidebar.subheader("Page navigtion")
 page = st.sidebar.selectbox(label="", options=["Train", "Predict", "Delete"])
-st.sidebar.write("https://github.com/zademn")
+st.sidebar.write("https://github.com/fabiencrtn")
 
 if page == "Train":
     # Conv is not provided yet
