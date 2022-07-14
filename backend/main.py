@@ -9,7 +9,7 @@ from ml.train import Trainer
 from ml.models import LinearModel
 from ml.data import load_mnist_data
 from ml.utils import set_device
-from backend.models import DeleteApiData, TrainApiData, PredictApiData
+from models import DeleteApiData, TrainApiData, PredictApiData
 
 
 # mlflow.set_tracking_uri('sqlite:///backend.db')

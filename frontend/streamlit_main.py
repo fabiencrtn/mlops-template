@@ -70,7 +70,6 @@ if page == "Train":
         else:
             res = "Training task failed"
         st.write(res)
-
     # if st.session_state.model_type == "Conv":
     #     pass
 
@@ -153,5 +152,6 @@ elif page == "Delete":
                 st.write("Some error occured")
         except ConnectionError:
             st.write("Couldn't reach backend")
+
 else:
     st.write("Page does not exist")

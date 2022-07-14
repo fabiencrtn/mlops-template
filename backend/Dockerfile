@@ -1,14 +1,10 @@
 FROM python:3.9-slim
 
-RUN mkdir /backend
-RUN mkdir /ml
+RUN mkdir /backend/
 
+COPY ./backend/ /backend/
+RUN pip install -r /backend/requirements.txt
 
-COPY ./backend/requirements.txt /backend/requirements.txt
-RUN pip install -r backend/requirements.txt
-
-COPY ./backend /backend
-COPY ./ml /ml
 
 EXPOSE 8000
 

@@ -8,7 +8,7 @@ WORKDIR /frontend
 
 RUN pip install -r requirements.txt
 
-COPY . /frontend
+COPY ./mlops_learning/frontend /frontend
 
 EXPOSE 8501
 

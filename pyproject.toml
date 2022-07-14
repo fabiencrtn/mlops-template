@@ -4,6 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["fabien <fabiencrouton10@gmail.com>"]
 
+
 [tool.poetry.dependencies]
 python = "^3.9"
 urllib3 = "^1.26.9"
