@@ -1,6 +1,6 @@
 # Fastapi + MLflow + streamlit
 
-Setup env. I hope I covered all.
+Setup env. 
 ```bash
 pip install -r requirements.txt
 ```
@@ -43,5 +43,3 @@ docker-compose up
 ## TODO
 - [x] Dockerize
 - [ ] Testing
-- [ ] Maybe add celery instead of that background task? (Needs extra configs though)
-
